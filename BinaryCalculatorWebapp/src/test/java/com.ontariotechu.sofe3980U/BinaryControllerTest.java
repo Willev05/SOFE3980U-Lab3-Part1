@@ -82,7 +82,7 @@ public class BinaryControllerTest {
     public void postParameter4() throws Exception {
         this.mvc.perform(post("/").param("operand2", "1100").param("operator", ""))
             .andExpect(status().isOk())
-            .andExpect(view().name("Error"));
+            .andExpect(view().name("error"));
     }
 
     //Test normal or.
